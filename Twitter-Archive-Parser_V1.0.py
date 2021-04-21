@@ -6,8 +6,8 @@
   Twitter-Archive-Parser.py
    ------------
 '''
-from __future__ import unicode_literals
-from __future__ import print_function
+
+
 import os
 import sys
 import logging
@@ -147,7 +147,7 @@ def getDict(filepath):
           if isinstance(node, ast.Assign)}
 
     # Edit the values obtained from the .js and append them to their own array
-    for keys, values in fields.iteritems():
+    for keys, values in fields.items():
         newValues = values.strip("\"")
         dataArr.append(str(newValues))
     
